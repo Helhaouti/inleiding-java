@@ -1,7 +1,7 @@
 // Uitwerking van 4.4
 package h04;
 
-import java.applet.Applet;
+import java.applet.*;
 import java.awt.*;
 
 public class VierPuntVier extends Applet {
