@@ -1,4 +1,5 @@
 // Uitwerking van 5.2
+
 package h05;
 
 import java.applet.*;
