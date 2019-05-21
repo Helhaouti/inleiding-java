@@ -43,7 +43,6 @@ public class PraktijkOpdracht extends Applet {
         add(Min);
 
         Resultaat = 0;
-
     }
 
     public void paint(Graphics g) {
@@ -91,5 +90,4 @@ public class PraktijkOpdracht extends Applet {
             repaint();
         }
     }
-
 }
