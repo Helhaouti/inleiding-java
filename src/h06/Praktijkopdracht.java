@@ -2,10 +2,10 @@
 
 package h06;
 
+import java.applet.Applet;
 import java.awt.*;
-import java.applet.*;
 
-public class Zpraktijkopdracht extends Applet{
+public class Praktijkopdracht extends Applet {
     double  Cijfer1, Cijfer2,Cijfer3;
     double  VarGemEen;
     int     VarGemTwee;

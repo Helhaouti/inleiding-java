@@ -3,7 +3,7 @@
 import java.applet.Applet;
 import java.awt.*;
 
-public class zPraktijkopdracht extends Applet {
+public class Praktijkopdracht extends Applet {
     public void init() {
     }
 
