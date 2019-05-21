@@ -14,14 +14,14 @@ public class AchtPuntTwee extends Applet {
     Button KnopVrouwen;
     Button KnopPotVrouwn;
 
-    // Declaration of string amount visitors by gender
+    // Declaration of amount visitors by gender
     int Mannen;
     int PotMannen;
     int Vrouwen;
     int PotVrouwn;
     int Totaal;
 
-    // locatie van stings
+    // location of stings
     int AfstandX;
     int RegelEen;
     int RegelTwee;
