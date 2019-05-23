@@ -7,70 +7,52 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Praktijkopdracht extends Applet {
-    TextField tekstvak;
-    Label labelVanTekstvak;
-    Button okKnop;
+    Label labelVanTekstvak;     TextField tekstvak;     Button okKnop;
 
-    int vorigIngetyptGetal;
-    int ingetyptGetal;
+    int afstandX, afstandY;
 
-    int afstandX;
-    int afstandY;
-    int factorEen;
-    int factorTwee;
-    int Resultaat;
+    int vorigIngetyptGetal, ingetyptGetal;
 
-    int teller;
-    int teller2;
-    int click;
+    int factorEen, factorTwee, resultaat;
 
+    int hoeveelsteClickOpOkKnopMetGelijkNummer, tellerVanClickEen, tellerVanClickTwee;
 
     public void init() {
-        tekstvak = new TextField();
-        labelVanTekstvak = new Label("Typ hiernaast de tafel die u wilt.");
-        tekstvak.addActionListener(new Buttonlistener());
+        labelVanTekstvak = new Label("Typ hiernaast de tafel die u wilt.");     tekstvak = new TextField();     tekstvak.addActionListener(new Buttonlistener());
 
-        okKnop = new Button("Ok");
-        okKnop.addActionListener(new Buttonlistener());
+        okKnop = new Button("Ok");      okKnop.addActionListener(new Buttonlistener());
 
-        add(labelVanTekstvak);
-        add(tekstvak);
-        add(okKnop);
-        click = 0;
+        add(labelVanTekstvak);      add(tekstvak);      add(okKnop);
+        hoeveelsteClickOpOkKnopMetGelijkNummer = 0;
     }
 
-    private void PakWaardesUitTekstVak() {
-        String A = tekstvak.getText();
-        ingetyptGetal = Integer.parseInt(A);
-    }
+    private void PakWaardesUitTekstVak() {  String A = tekstvak.getText();   ingetyptGetal = Integer.parseInt(A); }
 
     public void paint(Graphics g) {
-        afstandX = 20;
-        afstandY = 50;
-
+        afstandX = 20;  afstandY = 50;
         factorEen = 1;
 
-        if (click == 1) {
-            for (teller = 0; teller < 10; teller++) {
+        if (hoeveelsteClickOpOkKnopMetGelijkNummer == 1) {
+            for (tellerVanClickEen = 0; tellerVanClickEen < 10; tellerVanClickEen++) {
                 afstandY += 15;
-                Resultaat = factorEen * factorTwee;
-                g.drawString("" + factorEen + " x " + factorTwee + " =  " + Resultaat, 20, afstandY);
+                resultaat = factorEen * factorTwee;
+                g.drawString("" + factorEen + " x " + factorTwee + " =  " + resultaat, 20, afstandY);
                 factorEen++;
                 vorigIngetyptGetal = ingetyptGetal;
             }
         }
-        if (click == 2) {
-            factorTwee = 1;
-            for (teller2 = 0; teller2 < 10; teller2++) {
-                for (teller = 0; teller < 10; teller++) {
+
+        if (hoeveelsteClickOpOkKnopMetGelijkNummer == 2) {
+            for (tellerVanClickTwee = 0; tellerVanClickTwee < 10; tellerVanClickTwee++) {
+                for (tellerVanClickEen = 0; tellerVanClickEen < 10; tellerVanClickEen++) {
                     afstandY += 15;
-                    Resultaat = factorEen * factorTwee;
-                    g.drawString("" + factorEen + " x " + factorTwee + " =  " + Resultaat, afstandX, afstandY);
+                    resultaat = factorEen * factorTwee;
+                    g.drawString("" + factorEen + " x " + factorTwee + " =  " + resultaat, afstandX, afstandY);
                     factorEen++;
                 }
 
                 factorTwee++;
-                teller = 0;
+                tellerVanClickEen = 0;
                 afstandX += 80;
                 afstandY = 50;
                 factorEen = 1;
@@ -81,22 +63,11 @@ public class Praktijkopdracht extends Applet {
     class Buttonlistener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             PakWaardesUitTekstVak();
-            if (click > 2 || vorigIngetyptGetal != ingetyptGetal) {
-                click = 0;
-            }
-            click++;
 
-            if (click == 1) {
-                teller = 0;
-                factorTwee = ingetyptGetal;
-                repaint();
-            }
-
-            if (click == 2) {
-                teller2 = 0;
-                factorTwee = 1;
-                repaint();
-            }
+            if (hoeveelsteClickOpOkKnopMetGelijkNummer > 2 || ingetyptGetal != vorigIngetyptGetal) { hoeveelsteClickOpOkKnopMetGelijkNummer = 0; }
+            hoeveelsteClickOpOkKnopMetGelijkNummer++;
+            if (hoeveelsteClickOpOkKnopMetGelijkNummer == 1) {   factorTwee = ingetyptGetal;               repaint();  }
+            if (hoeveelsteClickOpOkKnopMetGelijkNummer == 2) {   factorTwee = 1;  tellerVanClickTwee = 0;  repaint();  }
         }
     }
 }
