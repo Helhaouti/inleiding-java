@@ -72,7 +72,6 @@ public class PraktijkOpdracht extends Applet {
 
             tellerArrayConverter++;
 
-
             if (hoeveelsteClickOpOkKnopMetGelijkNummer > 10) { hoeveelsteClickOpOkKnopMetGelijkNummer = 0; }
 
             hoeveelsteClickOpOkKnopMetGelijkNummer++;
