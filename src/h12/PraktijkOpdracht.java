@@ -1,3 +1,4 @@
+
 // Uitwerking van Praktijkopdracht
 package h12;
 
@@ -34,7 +35,7 @@ public class PraktijkOpdracht extends Applet {
 
     private void PakWaardesUitTekstVak() {
         String A  = tekstvakVoorTelefoonnummers.getText();   ingetyptTelefoonnummer = Integer.parseInt(A);
-        String B  = tekstvakVoorNamen.getText();              ingetyptenamen = B;
+        String B  = tekstvakVoorNamen.getText();             ingetyptenamen = B;
     }
 
     public void paint(Graphics g) {
@@ -43,6 +44,7 @@ public class PraktijkOpdracht extends Applet {
 
         if (hoeveelsteClickOpOkKnopMetGelijkNummer == 10) {
             for (tellerVanClickTwee = 0; tellerVanClickTwee < 10; tellerVanClickTwee++) {
+
                 afstandY = 80;
                 for (tellerVanClickEen = 0; tellerVanClickEen < 10; tellerVanClickEen++) {
                     afstandX = 20;
@@ -56,27 +58,23 @@ public class PraktijkOpdracht extends Applet {
                     afstandY += 15;
                     g.drawString("" + ingetyptTelefoonnummer, afstandX, afstandY);
                 }
-
-                tellerVanClickEen = 0;
-                afstandX += 80;
-                afstandY = 50;
+                hoeveelsteClickOpOkKnopMetGelijkNummer = 0;
+                tellerArrayConverter = 0;
             }
         }
     }
 
     class Buttonlistener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+            hoeveelsteClickOpOkKnopMetGelijkNummer++;
+
             PakWaardesUitTekstVak();
             inhoudTekstvakNamen             [tellerArrayConverter] = ingetyptenamen;
             inhoudTekstvakTelefoonnummer    [tellerArrayConverter] = ingetyptTelefoonnummer;
 
             tellerArrayConverter++;
 
-            if (hoeveelsteClickOpOkKnopMetGelijkNummer > 10) { hoeveelsteClickOpOkKnopMetGelijkNummer = 0; }
-
-            hoeveelsteClickOpOkKnopMetGelijkNummer++;
-
-            if (hoeveelsteClickOpOkKnopMetGelijkNummer == 10) { repaint(); tellerArrayConverter = 0; }
+            if (hoeveelsteClickOpOkKnopMetGelijkNummer == 10) { repaint(); }
         }
     }
 }
