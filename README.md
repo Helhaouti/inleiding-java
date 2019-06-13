@@ -28,12 +28,9 @@ In dit hoofdstuk heb ik gebuik gemaakt van de methode Paint() om vormen te teken
 # H6 Getallen
 Tijdens dit hoofdstuk heb ik geleerd hoe je:
 * een Java variabelen declareert en initialiseert;
-weet wat de primitieven int, long double en float zijn
-hoe je dezen naar een String kunt converteren om ze bijvoorbeeld op een scherm af te drukken
-de verschillende operatoren in rekenkundige bewerkingen kent
-hoe je unaire operatoren gebruikt
-wanneer en hoe je bij conversie van types typecasting moet toepassen
-hoe je in Java variabelen (betekenisvolle) namen geeft
+* de verschillende operatoren in rekenkundige bewerkingen gebruikt;
+* hoe je unaire operatoren gebruikt;
+* wanneer en hoe je bij conversie van types typecasting moet toepassen;
 
 # H7 Vensters
 
