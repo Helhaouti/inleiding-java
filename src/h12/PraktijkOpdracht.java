@@ -1,4 +1,3 @@
-
 // Uitwerking van Praktijkopdracht
 package h12;
 

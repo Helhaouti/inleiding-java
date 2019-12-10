@@ -1,46 +1,27 @@
+// Uitwerking van Praktijkopdracht
 package h08;
 
-import java.applet.Applet;
+import java.applet.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class PraktijkOpdracht extends Applet {
-    TextField FactorEen;
-    TextField FactorTwee;
+    /*declares textfields*/ TextField FactorEen, FactorTwee;
 
-    Button Vermenigvuldig;
-    Button Delen;
-    Button Plus;
-    Button Min;
+    /*declares buttons*/    Button Vermenigvuldig, Delen, Plus, Min;
 
-    double FactorEenInhoud;
-    double FactorTweeInhoud;
-    double Resultaat;
-
+    /*declares doubles*/    double FactorEenInhoud, FactorTweeInhoud, Resultaat;
 
     public void init() {
-        FactorEen = new TextField();
-        FactorTwee = new TextField();
+        /*Initializes textfields*/              FactorEen = new TextField();    FactorTwee = new TextField();
 
-        Vermenigvuldig = new Button("*");
-        Delen = new Button("/");
-        Plus = new Button("+");
-        Min = new Button("-");
+        /*Initializes buttons*/                 Vermenigvuldig = new Button("*");  Delen = new Button("/"); Plus = new Button("+"); Min = new Button("-");
 
+        /*Adds actionlistener to the buttons*/  Vermenigvuldig.addActionListener (new VermenigvuldigListener());     Delen.addActionListener (new DelenListener());     Plus.addActionListener (new PlusListener());       Min.addActionListener (new MinListener());
 
-        Vermenigvuldig.addActionListener(new VermenigvuldigListener());
-        Delen.addActionListener(new DelenListener());
-        Plus.addActionListener(new PlusListener());
-        Min.addActionListener(new MinListener());
+        /*Adds textfields to the Applet*/       add(FactorEen);     add(FactorTwee);
 
-        add(FactorEen);
-        add(FactorTwee);
-
-        add(Vermenigvuldig);
-        add(Delen);
-        add(Plus);
-        add(Min);
+        /*Adds buttons to the Applet*/          add(Vermenigvuldig);    add(Delen);     add(Plus);      add(Min);
 
         Resultaat = 0;
     }
@@ -51,11 +32,8 @@ public class PraktijkOpdracht extends Applet {
 
 
     private void getWaardesVanTekstvakken() {
-        String A = FactorEen.getText();
-        FactorEenInhoud = Double.parseDouble(A);
-
-        String B = FactorTwee.getText();
-        FactorTweeInhoud = Double.parseDouble(B);
+        String A = FactorEen.getText();     FactorEenInhoud = Double.parseDouble(A);
+        String B = FactorTwee.getText();    FactorTweeInhoud = Double.parseDouble(B);
     }
 
 

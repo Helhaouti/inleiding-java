@@ -2,18 +2,16 @@
 
 package h10;
 
-import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
+import java.applet.*;
+import java.awt.event.*;
 
 public class PraktijkOpdracht extends Applet {
     TextField tekstvak;
     Label label;
 
     double ingetyptGetal;
-    String voldoende;
+    String waardeVanCijfer;
 
     public void init() {
         tekstvak = new TextField();
@@ -28,7 +26,7 @@ public class PraktijkOpdracht extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString(voldoende, 20, 50);
+        g.drawString(waardeVanCijfer, 20, 50);
     }
 
     private void PakWaardesVanTekstvak() {
@@ -39,20 +37,21 @@ public class PraktijkOpdracht extends Applet {
     class tekstvaklistener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             PakWaardesVanTekstvak();
+
             if (ingetyptGetal >= 1 && ingetyptGetal <= 3) {
-                voldoende = "Slecht";
+                waardeVanCijfer = "Slecht";
                 repaint();
             }
             if (ingetyptGetal == 4) {
-                voldoende = "Onvoldoende";
+                waardeVanCijfer = "Onvoldoende";
                 repaint();
             }
             if (ingetyptGetal == 6 || ingetyptGetal == 7) {
-                voldoende = "voldoende";
+                waardeVanCijfer = "voldoende";
                 repaint();
             }
             if (ingetyptGetal >= 8 && ingetyptGetal <= 10) {
-                voldoende = "Goed";
+                waardeVanCijfer = "Goed";
                 repaint();
             }
         }

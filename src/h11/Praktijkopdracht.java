@@ -3,8 +3,7 @@ package h11;
 
 import java.applet.Applet;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class Praktijkopdracht extends Applet {
     Label labelVanTekstvak;     TextField tekstvak;     Button okKnop;
@@ -43,6 +42,7 @@ public class Praktijkopdracht extends Applet {
         }
 
         if (hoeveelsteClickOpOkKnopMetGelijkNummer == 2) {
+
             for (tellerVanClickTwee = 0; tellerVanClickTwee < 10; tellerVanClickTwee++) {
                 for (tellerVanClickEen = 0; tellerVanClickEen < 10; tellerVanClickEen++) {
                     afstandY += 15;
@@ -65,7 +65,9 @@ public class Praktijkopdracht extends Applet {
             PakWaardesUitTekstVak();
 
             if (hoeveelsteClickOpOkKnopMetGelijkNummer > 2 || ingetyptGetal != vorigIngetyptGetal) { hoeveelsteClickOpOkKnopMetGelijkNummer = 0; }
+
             hoeveelsteClickOpOkKnopMetGelijkNummer++;
+
             if (hoeveelsteClickOpOkKnopMetGelijkNummer == 1) {   factorTwee = ingetyptGetal;               repaint();  }
             if (hoeveelsteClickOpOkKnopMetGelijkNummer == 2) {   factorTwee = 1;  tellerVanClickTwee = 0;  repaint();  }
         }
