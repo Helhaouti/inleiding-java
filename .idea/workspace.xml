@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bca16c23-cab6-4207-9761-0736378f8bc9" name="Default Changelist" comment="Uitwerking van h8">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/HHaou.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/h14/Praktijkopdracht.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/h14/resources/emotionless.png" afterDir="false" />
+    <list default="true" id="bca16c23-cab6-4207-9761-0736378f8bc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,28 +20,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/h14/PraktijkopdrachtNieuw.java">
+        <entry file="file://$PROJECT_DIR$/src/h14/Praktijkopdracht.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+            <state relative-caret-position="420">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#705:2005" />
                 <element signature="class#2049:2207" />
-                <element signature="method#gameResetter#0;class#PraktijkopdrachtNieuw#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/h14/Twee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#deelKaart#0;class#Twee#0" />
               </folding>
             </state>
           </provider>
@@ -106,8 +89,8 @@
         <option value="$PROJECT_DIR$/src/h13/Praktijkopdracht.java" />
         <option value="$PROJECT_DIR$/src/h14/TweeNieuw.java" />
         <option value="$PROJECT_DIR$/src/h14/Twee.java" />
-        <option value="$PROJECT_DIR$/src/h14/Praktijkopdracht.java" />
         <option value="$PROJECT_DIR$/src/h14/PraktijkopdrachtNieuw.java" />
+        <option value="$PROJECT_DIR$/src/h14/Praktijkopdracht.java" />
       </list>
     </option>
   </component>
@@ -174,13 +157,6 @@
               <item name="inleiding-java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="h14" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inleiding-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inleiding-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="h14" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,7 +292,7 @@
       <workItem from="1576053101665" duration="5295000" />
       <workItem from="1576441010289" duration="418000" />
       <workItem from="1578303059777" duration="3757000" />
-      <workItem from="1578385040302" duration="2065000" />
+      <workItem from="1578385040302" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Uitwerking van h1">
       <created>1558092904939</created>
@@ -430,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575996487257</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Uitwerking van h8">
+      <created>1578387338435</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1578387338435</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111926000" />
+    <option name="totallyTimeSpent" value="112168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,7 +430,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.24945295" />
       <window_info id="Designer" order="1" />
@@ -456,10 +438,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.5016077" side_tool="true" weight="0.077292114" />
       <window_info id="Learn" order="6" weight="0.32949933" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49839228" visible="true" weight="0.22068231" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49839228" visible="true" weight="0.22068231" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.39" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.5188889" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.5188889" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.31555554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -528,14 +510,14 @@
     <MESSAGE value="Uitwerking van h1" />
     <MESSAGE value="Uitwerking van h6" />
     <MESSAGE value="Uitwerking van h5" />
-    <MESSAGE value="Uitwerking van h8" />
     <MESSAGE value="Verandering naam" />
     <MESSAGE value="Uitwerking van h10" />
     <MESSAGE value="Uitwerking van h11" />
     <MESSAGE value="Praktijkopdracht" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="h14 .1 &amp; .2" />
-    <option name="LAST_COMMIT_MESSAGE" value="h14 .1 &amp; .2" />
+    <MESSAGE value="Uitwerking van h8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uitwerking van h8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
@@ -888,15 +870,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/h14/PraktijkopdrachtNieuw.java">
+    <entry file="file://$PROJECT_DIR$/src/h14/Praktijkopdracht.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#705:2005" />
             <element signature="class#2049:2207" />
-            <element signature="method#gameResetter#0;class#PraktijkopdrachtNieuw#0" />
           </folding>
         </state>
       </provider>
